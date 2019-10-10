@@ -23,9 +23,9 @@ For this lab you'll be using the Open Weather Data API. In order to use it, plea
 5. Review these instructions on how you should structure your API requests: https://openweathermap.org/appid#use
 
 ```
-https://api.openweathermap.org/data/2.5/weather?q=10010&appid=[PUT YOUR API KEY HERE]
-
 https://api.openweathermap.org/data/2.5/weather?q=brooklyn&appid=[PUT YOUR API KEY HERE]
+
+https://api.openweathermap.org/data/2.5/weather?zip=10010&appid=[PUT YOUR API KEY HERE]
 ```
 
 #### ⚡️ Plan your implementation approach using pseudocode
