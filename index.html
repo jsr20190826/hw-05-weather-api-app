@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather API APP</title>
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
+<head>
+<meta charset="utf-8">
+<title>Weather API APP</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700">
+<link rel="stylesheet" href="css/styles.css">
+</head>
 
-  <body>
+<body>
+	<div class="user-form">
+		<h1>Weather App<span>Find current conditions for any city</span></h1>
+		<form id="weather-form">
+			<input id="user-input" type="text" placeholder="Enter City or Zipcode" />
+			<button class="submit" type="submit">Submit</button>
+		</form>
+	</div>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-  </body>
+	<div class="weather-results"></div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
+</body>
 </html>
