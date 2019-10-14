@@ -1,0 +1,35 @@
+body{font-family: arial; font-size:1em;width:100%;height:100%;}
+ul{padding:0; list-style-image:none; list-style: none;}
+
+.lowTemp {color:blue; font-weight:bold;}
+.highTemp{color:red; font-weight:bold;}
+
+#wrapper{
+  position:relative;
+}
+
+#layoutPlacement {
+  z-index:1;
+  padding:2em;
+  background-color:#fff;
+  width:fit-content;
+  margin:auto;
+  position: absolute;
+  top: 50%; right: 50%;
+  transform: translate(50%,-50%);
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index:-1;
+}
+
+@media only screen and (max-width: 600px) {
+  input, h3, button{font-size:3em;}
+}
