@@ -2,16 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Weather API APP</title>
+    <title>OpenWeather API</title>
     <link href="css/styles.css" rel="stylesheet">
   </head>
 
   <body>
 
+    <div class="container">
+      <form id="search">
+        <p>Find Weather:</p>
+        <input type="text" id="query" placeholder="city,co[untry] or zipcode,co[untry]" />
+        <button>Search</button>
+        <tr> Examples: Rio, BR or New Orleans, US</tr>
+      </form>
+      <!-- Struggling to find a way to place the reset button on the same line without
+      being part of the "search" id (which leads to errors)
+      Ended up with the reset button on a separate line -->
+      <form id="reset">
+        <button>Reset</button>
+      </form>
+    </div>
+
+      <!-- This is the heading for the results.  This is fully flexible when you drag the
+      sceen wider, but it should have followed the search container better .....
+      Need to work more on html and css -->
+      <table class="results-table" id="results-table">
+        <thead>
+          <tr>
+            <th>City Name</th>
+            <th>Current Temperature</th>
+            <th>Weather</th>
+            <th>Min Temperature</th>
+            <th>Max Temperature</th>
+          </tr>
+        </thead>
+        <tbody>
+        <!-- This is where the table with data will be written -->
+        </tbody>
+      </table>
+
+    </body>
+
+
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="js/app.js"></script>
   </body>
 </html>
