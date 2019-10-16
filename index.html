@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather API APP</title>
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>Weather API APP</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
 
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.min.js"
-      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-      crossorigin="anonymous"></script>
-    <script src="js/app.js"></script>
-  </body>
+<body>
+  <div class="jumbotron" style="margin-bottom:0px; color:white; background-color: #4aa1f3;">
+    <h2 class="text-center" style="font-size:50px; font-weight:600;" :>Get Current Weather</h2>
+  </div>
+
+  <div class="container">
+    <div class="row" style="margin-bottom:20px;">
+      <h3 class="text-center text-primary">Enter City Name</h3>
+      <span id="error"></span>
+    </div>
+
+    <div class="row form-group form-inline" id="rowDiv">
+      <input type="text" name="city" id="city" class="form-control" placeholder="City Name">
+      <button id="submitWeather" class="btn btn-primary">Search City</button>
+    </div>
+    <div id="showWeather"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
