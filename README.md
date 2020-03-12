@@ -37,7 +37,7 @@ If you find the assignment too challenging to complete, you can bet the first pl
 ### Requirement #2: Core Functionality
 - [ ] When the submit button is clicked:
     - [ ] A **GET** request should be made to OpenWeather API (base url: `https://api.openweathermap.org/data/2.5/weather`) to fetch the current weather for the city name entered by the user
-    - **IMPORTANT**: use `https` and NOT `http`
+    - **IMPORTANT**: use `https` and NOT `http` for the base url
     - [ ] The following data should be rendered to the page:
         - [ ] City name
         - [ ] Current temperature (displayed in Fahrenheit)
